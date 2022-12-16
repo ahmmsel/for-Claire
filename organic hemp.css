@@ -1,0 +1,163 @@
+body {
+  margin: 32px;
+  background-color: #F5F5F5;
+  font-family: neue-haas-grotesk-text, sans-serif;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  overflow: hidden;
+}
+
+.main img {
+  width: 100%;
+}
+
+.title {
+  grid-column: 1 / 10;
+  grid-row: 6;
+  font-size: 3em;
+  margin: 192px 0px;
+}
+
+.divider {
+  grid-column: 1 / 10;
+  grid-row: 12;
+  border-bottom: 2px solid black;
+  margin-bottom: 16px;
+}
+
+.brand_name {
+  grid-column: 1 / 5;
+  grid-row: 14;
+  margin-bottom: 16px;
+}
+
+.img1 {
+  display: block;
+  object-fit: cover;
+  grid-column: 1 / 4;
+  grid-row: 15;
+  margin-right: 16px;
+}
+
+.img2 {
+  display: block;
+  object-fit: cover;
+  grid-column: 4 / 6;
+  grid-row: 15;
+  margin-right: 16px;
+}
+
+.thought_message {
+  grid-column: 6 / 9;
+  grid-row: 15;
+  margin-top: 16px;
+}
+
+.img3 {
+  display: block;
+  object-fit: cover;
+  grid-column: 6 / 10;
+  grid-row: 16;
+  margin-top: 32px;
+}
+
+.chloe {
+  grid-column: 1 / 5;
+  grid-row: 16;
+  display: flex;
+  align-items: flex-end;
+  margin-top: 32px;
+}
+
+.img4 {
+  grid-column: 1 / 4;
+  grid-row: 17;
+  margin-top: 16px;
+  padding-right: 16px;
+}
+
+.img5 {
+  grid-column: 4 / 7;
+  grid-row: 17;
+  margin-top: 16px;
+  padding-right: 16px;
+}
+
+.chloe_message {
+  grid-column: 7 / 10;
+  grid-row: 17;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-bottom: 96px;
+}
+
+.Lanius {
+  grid-column: 1 / 5;
+  grid-row: 18;
+  margin-top: 160px;
+}
+
+.img6 {
+  display: block;
+  object-fit: cover;
+  grid-column: 6 / 9;
+  grid-row: 18;
+  margin-top: 160px;
+}
+
+.img7 {
+  display: block;
+  object-fit: cover;
+  grid-column: 6 / 9;
+  grid-row: 19;
+  margin-top: 16px;
+}
+
+@media screen and (max-width: 640px) {
+
+
+
+  body {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 24px;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .chloe_message {
+    margin-top: 16px;
+  }
+
+  .Lanius {
+    margin-top: 0px;
+  }
+
+  .img6 {
+    display: block;
+    object-fit: cover;
+    grid-column: 6 / 9;
+    grid-row: 18;
+    margin-top: 16px;
+  }
+
+  .img7 {
+    display: block;
+    object-fit: cover;
+    grid-column: 6 / 9;
+    grid-row: 19;
+    margin-top: 16px;
+
+
+
+
+
+
+  }

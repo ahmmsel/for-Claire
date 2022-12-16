@@ -1,0 +1,108 @@
+body {
+  margin: 32px;
+  background-color: #F5F5F5;
+  font-family: neue-haas-grotesk-text, sans-serif;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  overflow: hidden;
+}
+
+.content img {
+  width: 100%;
+}
+
+.title {
+  grid-column: 1 / 10;
+  grid-row: 6;
+  font-size: 3em;
+}
+
+.divider {
+  grid-column: 1 / 10;
+  grid-row: 12;
+  border-bottom: 2px solid black;
+  margin-bottom: 16px;
+}
+
+.brand_name {
+  grid-column: 1 / 5;
+  grid-row: 14;
+  margin-bottom: 16px;
+}
+
+.img1 {
+  display: block;
+  object-fit: cover;
+  grid-column: 4 / 10;
+  grid-row: 15;
+}
+
+.Ohsevendays_message {
+  display: block;
+  grid-column: 4 / 10;
+  grid-row: 16;
+  margin-top: 32px;
+}
+
+.img2_7 {
+  grid-column: 1 / 10;
+  grid-row: 17;
+  margin-top: 144px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.items {
+  grid-column: 4 / 7;
+  grid-row: 18;
+  margin-top: 72px;
+}
+
+.img7_grid {
+  grid-column: 1 / 10;
+  grid-row: 19;
+  margin-top: 72px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+
+
+@media screen and (max-width: 640px) {
+
+
+  body {
+    margin: 24px;
+    background-color: #F5F5F5;
+    font-family: neue-haas-grotesk-text, sans-serif;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .img2_7 {
+    margin-top: 72px;
+  }
+
+  .items {
+    grid-column: 4 / 7;
+    grid-row: 18;
+    margin-top: 16px;
+  }
+
+  .img7_grid {
+    grid-column: 1 / 10;
+    grid-row: 19;
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+
+}

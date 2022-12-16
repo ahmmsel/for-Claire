@@ -1,0 +1,345 @@
+* {
+  padding: 0px;
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: rgb(101, 101, 101);
+}
+
+.name img {
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.header {
+  /* For Opera and <= IE9, we need to add unselectable="on" attribute onto each element */
+  /* Check this site for more details: http://help.dottoro.com/lhwdpnva.php */
+  -moz-user-select: none;
+  /* These user-select properties are inheritable, used to prevent text selection */
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  /* From IE10 only */
+  user-select: none;
+  /* Not valid CSS yet, as of July 2012 */
+
+  -webkit-user-drag: none;
+  /* Prevents dragging of images/divs etc */
+  user-drag: none;
+}
+
+a:active {
+  color: gray;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 48;
+}
+
+body {
+  margin: 32px;
+  background-color: #f5f5f5;
+  font-family: neue-haas-grotesk-text, sans-serif;
+}
+
+.name {
+  margin-bottom: 16px;
+}
+
+hr {
+  border: 1px solid black;
+}
+
+.card {
+  margin-top: 16px;
+  cursor: grab;
+}
+
+.card-inner {
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: all 0.8s ease;
+  background-color: white;
+
+  /* backface-visibility: hidden; */
+  /* -webkit-backface-visibility: hidden; */
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 2fr 1fr 4fr;
+  padding: 16px 0px 24px 24px;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  margin-bottom: 114px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.front {
+  backface-visibility: hidden;
+  display: grid;
+  grid-template-columns: 6fr 2fr 1fr;
+  padding: 24px;
+  /* transform: translateZ(1px);; */
+
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.swatchname {
+  font-size: 4em;
+  font-weight: 400;
+  padding: 0px;
+}
+
+.swatchnumber {
+  padding-left: 18px;
+  font-weight: 400;
+  font-size: 1em;
+  color: #000000;
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform: rotateY(180deg) translateZ(1px);
+
+  display: grid;
+  grid-template-columns: 2fr 4fr 1fr;
+  grid-template-rows: 1fr;
+
+  background-color: white;
+
+  /* adding */
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.back_swatchimg {
+  padding: 24px 0px 0px 24px;
+  font-size: 1em;
+  line-height: 2em;
+}
+
+.back_text {
+  padding: 24px 0px 24px 24px;
+  font-size: 0.9em;
+  display: block;
+
+  overflow-x: auto;
+}
+
+.back_title {
+  font-size: 1.5em;
+}
+
+.seeexamples {
+  position: relative;
+  height: 100%;
+  padding-left: 24px;
+}
+
+.seeexamples_text {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+}
+
+.flipCard .card-inner {
+  transform: rotateY(180deg);
+}
+
+footer {
+  margin: 64px 0px;
+  display: grid;
+  grid-template-columns: 4fr 4fr 1fr;
+}
+
+@media screen and (max-width: 992px) {
+  .intro {
+    display: grid;
+    grid-template-columns: 3fr 3fr 2fr;
+  }
+
+  .front {
+    backface-visibility: hidden;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .swatchname {
+    font-size: 2.5em;
+    font-weight: 400;
+  }
+
+  .swatchnumber {
+    position: absolute;
+    bottom: 24px;
+    padding-left: 0px;
+    font-weight: 400;
+    font-size: 1em;
+    color: #000000;
+  }
+
+  .back {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    padding-left: 0px;
+  }
+
+  .back_swatchimg {
+    grid-column: 1 / 2;
+    grid-row: 1;
+    padding: 24px 0px 0px 24px;
+  }
+
+  .seeexamples {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    position: relative;
+    height: 100%;
+  }
+
+  .back_text {
+    grid-column: 2 / 4;
+    grid-row: 1;
+    padding: 24px 24px 0px 24px;
+    font-size: 0.9em;
+  }
+
+  .seeexamples_text {
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    font-size: 1em;
+    font-weight: 400;
+  }
+
+  .back_title {
+    font-size: 1.2em;
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    margin: 16px;
+    background-color: #f5f5f5;
+    font-family: neue-haas-grotesk-text, sans-serif;
+  }
+
+  .name {
+    margin-bottom: 8px;
+  }
+
+  .intro {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    padding: 8px 0px 16px 16px;
+    font-size: 1.2em;
+    line-height: 1.4em;
+    margin-bottom: 56px;
+    font-weight: 400;
+    color: #000000;
+  }
+
+  .card {
+    margin-top: 16px;
+  }
+
+  .front {
+    backface-visibility: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 16px;
+  }
+
+  .swatchname {
+    font-size: 2em;
+    font-weight: 400;
+    margin-bottom: 24px;
+  }
+
+  .swatchnumber {
+    position: static;
+    margin-top: 24px;
+    font-weight: 400;
+    font-size: 1em;
+    padding: 0px;
+    color: #000000;
+  }
+
+  .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg) translateZ(1px);
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: white;
+    grid-template-rows: repeat(3, 1fr) 30px;
+  }
+
+  .back_swatchimg {
+    grid-row: 1;
+    padding: 12px 12px 0px 12px;
+    font-size: 12px;
+  }
+
+  .back_text {
+    grid-column: 1 / 4;
+    grid-row: 2 / 4;
+    padding: 12px;
+    line-height: 0.9rem;
+    font-size: 0.7rem;
+  }
+
+  .back_title {
+    font-size: 18px;
+  }
+
+  .seeexamples {
+    grid-column: 1 / 4;
+    grid-row-end: 5;
+    position: relative;
+    height: 100%;
+  }
+
+  .seeexamples_text {
+    font-size: 12px;
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+  }
+
+  footer {
+    margin: 48px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+
+  .date {
+    grid-column: 2 / 3;
+    grid-row: 2;
+  }
+}

@@ -1,0 +1,168 @@
+body {
+  margin: 32px;
+  background-color: #F5F5F5;
+  font-family: neue-haas-grotesk-text, sans-serif;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  overflow: hidden;
+}
+
+.content img {
+  width: 100%;
+}
+
+.title {
+  grid-column: 1 / 9;
+  grid-row: 6;
+  font-size: 3em;
+  margin: 192px 0px;
+}
+
+.divider {
+  grid-column: 1 / 9;
+  grid-row: 12;
+  border-bottom: 2px solid black;
+  margin-bottom: 16px;
+}
+
+.brand_name {
+  grid-column: 1 / 9;
+  grid-row: 14;
+  margin-bottom: 16px;
+}
+
+.img1 {
+  grid-column: 1 / 9;
+  grid-row: 15;
+}
+
+.info {
+  grid-column: 5 / 9;
+  grid-row: 16;
+  margin-bottom: 48px;
+}
+
+
+.img2 {
+  grid-column: 5 / 9;
+  grid-row: 17;
+  margin-bottom: 16px;
+  margin-left: 8px;
+}
+
+.img3 {
+  grid-column: 1 / 5;
+  grid-row: 18;
+  margin-right: 8px;
+}
+
+.img4 {
+  grid-column: 5 / 9;
+  grid-row: 18;
+  margin-left: 8px;
+}
+
+.img5 {
+  grid-column: 1 / 9;
+  grid-row: 19;
+  margin-top: 32px;
+  margin-bottom: 64px;
+}
+
+.img6_7 {
+  grid-column: 5 / 9;
+  grid-row: 20;
+}
+
+
+.info2 {
+  grid-column: 1 / 5;
+  grid-row: 20;
+  /* margin-top: 64px; */
+  margin-right: 16px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.img8 {
+  grid-column: 1 / 9;
+  grid-row: 22;
+  margin-top: 64px;
+}
+
+
+
+
+@media screen and (max-width: 640px) {
+
+  body {
+    margin: 24px;
+  }
+
+  .img1 {
+    grid-column: 1 / 9;
+    grid-row: 15;
+  }
+
+  .info {
+    grid-column: 1 / 9;
+    grid-row: 16;
+    margin-bottom: 48px;
+  }
+
+
+  .img2 {
+    grid-column: 1 / 9;
+    grid-row: 17;
+    margin-bottom: 16px;
+    margin-left: 0px;
+  }
+
+  .img3 {
+    grid-column: 1 / 9;
+    grid-row: 18;
+    margin-right: 0px;
+  }
+
+  .img4 {
+    grid-column: 1 / 9;
+    grid-row: 18;
+    margin-left: 0px;
+  }
+
+  .img5 {
+    grid-column: 1 / 9;
+    grid-row: 19;
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+
+  .img6_7 {
+    grid-column: 1 / 9;
+    grid-row: 21;
+    margin-top: 16px;
+  }
+
+
+  .info2 {
+    grid-column: 1 / 9;
+    grid-row: 20;
+    /* margin-top: 64px; */
+    margin-right: 0px;
+    display: block;
+
+  }
+
+  .img8 {
+    grid-column: 1 / 9;
+    grid-row: 22;
+    margin-top: 16px;
+  }
+
+
+
+}

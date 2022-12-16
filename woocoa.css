@@ -1,0 +1,165 @@
+body {
+  margin: 32px;
+  background-color: #F5F5F5;
+  font-family: neue-haas-grotesk-text, sans-serif;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  overflow: hidden;
+}
+
+.content img {
+  width: 100%;
+}
+
+.title {
+  grid-column: 1 / 11;
+  grid-row: 6;
+  font-size: 3em;
+  margin: 192px 0px;
+}
+
+.divider {
+  grid-column: 1 / 11;
+  grid-row: 12;
+  border-bottom: 2px solid black;
+  margin-bottom: 16px;
+}
+
+.brand_name {
+  grid-column: 1 / 11;
+  grid-row: 14;
+  margin-bottom: 16px;
+}
+
+.img1 {
+  grid-column: 1 / 11;
+  grid-row: 15;
+  margin-bottom: 16px;
+}
+
+.info {
+  grid-column: 1 / 5;
+  grid-row: 16;
+}
+
+.img2 {
+  grid-column: 4 / 6;
+  grid-row: 17;
+  margin-top: 232px;
+}
+
+.img3 {
+  grid-column: 7 / 9;
+  grid-row: 17;
+  margin-top: 232px;
+  margin-right: 8px;
+}
+
+.img4 {
+  grid-column: 9 / 11;
+  grid-row: 17;
+  margin-top: 232px;
+  margin-left: 8px;
+}
+
+.img5 {
+  grid-column: 1 / 3;
+  grid-row: 18;
+  margin-top: 64px;
+  margin-right: 8px;
+}
+
+.img6 {
+  grid-column: 3 / 5;
+  grid-row: 18;
+  margin-top: 64px;
+  margin-left: 8px;
+}
+
+.img7 {
+  grid-column: 5 / 11;
+  grid-row: 19;
+  margin-top: 328px;
+}
+
+.img8 {
+  grid-column: 5 / 11;
+  grid-row: 20;
+  margin-top: 16px;
+
+}
+
+
+
+
+@media screen and (max-width: 640px) {
+
+
+  body {
+    margin: 24px;
+  }
+
+  .img1 {
+    grid-column: 1 / 11;
+    grid-row: 15;
+    margin-bottom: 16px;
+  }
+
+  .info {
+    grid-column: 1 / 11;
+    grid-row: 16;
+  }
+
+  .img2 {
+    grid-column: 1 / 6;
+    grid-row: 17;
+    margin-top: 16px;
+  }
+
+  .img3 {
+    grid-column: 1 / 6;
+    grid-row: 18;
+    margin-top: 0px;
+    margin-right: 8px;
+  }
+
+  .img4 {
+    grid-column: 6 / 11;
+    grid-row: 18;
+    margin-top: 0px;
+    margin-left: 8px;
+  }
+
+  .img5 {
+    grid-column: 1 / 6;
+    grid-row: 19;
+    margin-top: 0px;
+    margin-right: 8px;
+  }
+
+  .img6 {
+    grid-column: 6 / 11;
+    grid-row: 19;
+    margin-top: 0px;
+    margin-left: 8px;
+  }
+
+  .img7 {
+    grid-column: 1 / 11;
+    grid-row: 20;
+    margin-top: 0px;
+  }
+
+  .img8 {
+    grid-column: 1 / 11;
+    grid-row: 21;
+    margin-top: 16px;
+
+  }
+
+
+
+}

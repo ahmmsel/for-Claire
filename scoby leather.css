@@ -1,0 +1,170 @@
+body {
+  margin: 32px;
+  background-color: #F5F5F5;
+  font-family: neue-haas-grotesk-text, sans-serif;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  overflow: hidden;
+}
+
+.content img {
+  width: 100%;
+}
+
+.title {
+  grid-column: 1 / 10;
+  grid-row: 6;
+  font-size: 3em;
+  margin: 192px 0px;
+}
+
+.divider {
+  grid-column: 1 / 10;
+  grid-row: 12;
+  border-bottom: 2px solid black;
+  margin-bottom: 16px;
+}
+
+.brand_name {
+  grid-column: 1 / 10;
+  grid-row: 14;
+  margin-bottom: 16px;
+}
+
+.img1 {
+  grid-column: 1 / 4;
+  grid-row: 15;
+  margin-bottom: 16px;
+}
+
+.img2 {
+  grid-column: 1 / 4;
+  grid-row: 16;
+}
+
+.kombuchaclothinginfo {
+  grid-column: 4 / 10;
+  grid-row: 16;
+  margin-left: 16px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.img3 {
+  grid-column: 6 / 10;
+  grid-row: 17;
+  margin: 32px 0px 16px 0px;
+
+}
+
+.img4 {
+  grid-column: 6 / 10;
+  grid-row: 18;
+}
+
+
+.img5 {
+  grid-column: 3 / 5;
+  grid-row: 19;
+  margin-top: 128px;
+  margin-right: 8px;
+}
+
+.img6 {
+  grid-column: 5 / 7;
+  grid-row: 19;
+  margin-top: 128px;
+  margin-left: 8px;
+}
+
+.img7 {
+  grid-column: 3 / 5;
+  grid-row: 20;
+  margin-top: 16px;
+  margin-right: 8px;
+}
+
+.info {
+  grid-column: 5 / 10;
+  grid-row: 20;
+  margin-top: 128px;
+  margin-left: 8px;
+  display: flex;
+  align-items: flex-end;
+}
+
+
+
+@media screen and (max-width: 640px) {
+
+  body {
+    margin: 24px;
+  }
+
+  .content {
+    grid-column: 1 / 10;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .img1 {
+    grid-column: 1 / 10;
+    grid-row: 15;
+    margin-bottom: 16px;
+  }
+
+  .img2 {
+    grid-column: 1 / 10;
+    grid-row: 16;
+  }
+
+  .kombuchaclothinginfo {
+    grid-column: 1 / 10;
+    grid-row: 17;
+    margin-left: 0px;
+  }
+
+  .img3 {
+    grid-column: 1 / 10;
+    grid-row: 18;
+    margin: 32px 0px 16px 0px;
+  }
+
+  .img4 {
+    grid-column: 1 / 10;
+    grid-row: 19;
+  }
+
+  .img5 {
+    grid-column: 1 / 10;
+    grid-row: 20;
+    margin-top: 128px;
+  }
+
+  .img6 {
+    grid-column: 1 / 10;
+    grid-row: 21;
+    margin-top: 16px;
+    margin-left: 0px;
+  }
+
+  .img7 {
+    grid-column: 1 / 10;
+    grid-row: 22;
+    margin-top: 16px;
+    margin-right: 0px;
+  }
+
+  .info {
+    grid-column: 1 / 10;
+    grid-row: 23;
+    margin-top: 16px;
+    margin-left: 0px;
+    display: block;
+    align-items: flex-start;
+  }
+
+}
