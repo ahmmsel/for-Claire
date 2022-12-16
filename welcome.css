@@ -169,6 +169,10 @@ a:visited {
 }
 
 @media (max-width: 768px) {
+  .open-site h1 {
+    font-size: 19px;
+  }
+
   .img1 {
     top: 10%;
     left: 5%;
@@ -188,13 +192,14 @@ a:visited {
   }
 
   .img4 {
-    top: 6%;
-    left: 54%;
+    top: 2%;
+    left: 80%;
     width: 60px;
   }
 
   .img5 {
     top: 14%;
+    left: auto;
     right: 0;
     width: 60px;
   }
@@ -207,7 +212,7 @@ a:visited {
 
   .img7 {
     top: 33%;
-    right: 2%;
+    right: 14%;
     width: 50px;
   }
 
@@ -226,7 +231,7 @@ a:visited {
   .img10 {
     bottom: 34%;
     left: 22%;
-    width: 50px;
+    width: 80px;
   }
 
   .img11 {
@@ -237,14 +242,9 @@ a:visited {
 
   .img12 {
     bottom: 10%;
-    right: 2%;
+    left: auto;
+    right: 0;
     width: 40px;
-  }
-}
-
-@media (max-width: 390px) {
-  .open-site h1 {
-    font-size: 19px;
   }
 }
 
